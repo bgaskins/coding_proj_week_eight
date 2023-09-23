@@ -1,0 +1,67 @@
+<!--
+    - At least 3 pages with links to navigate between all pages present on each page.
+    - 2 different size headers 
+    - a list
+    - 3 images
+    - a table
+    - a form
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css file to index.html -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>RoadstandApp</title>
+  </head>
+  <body>
+
+    <!--Navbar with a list-->
+    <nav>
+            <ul>
+                <div class="container" id="veg-logo">
+                    <img class="image" src="./assets/images/tomato-peas-carrots.png" alt="Image of tomatoes, pease and carrots">
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </nav>
+    <!--Headers-->
+    <main>  
+
+        <!--Roadstand Logo-->
+        <div class="container" id="chicken-logo-main">
+            <img class="image" src="./assets/images/roadstand-logo.jpg" alt="Roadstand logo">
+        </div>
+        <!--Headers and form-->
+        <div class="container" id="headers">
+            <h1>Get an invite...</h1><br>   
+            <h3>What is Roadstand?</h3>
+            <p>Roadstand is an app that helps you locate nearby farm stands.</p><br>
+        </div> 
+
+        <!--Email signup form-->
+        <div class="container" id="signup">
+        <h3>Sign up here:</h3>  
+            <form action="submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <br>
+                <input class="button" type="submit" value="Submit">
+            </form>
+    </main>
+    <footer>
+        <div class="continer-fluid" id="footer-text" =>
+            <p>Roadstand. Copyright 2023.</p>
+        </div>
+    </footer>
+    <!-- Link js files to index.html -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

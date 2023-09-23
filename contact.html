@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css file to index.html -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+
+    <!--Navbar with a list-->
+    <nav>
+        <ul>
+          <div class="container" id="veg-logo">
+            <img class="image" src="./assets/images/tomato-peas-carrots.png" alt="Image of tomatoes, pease and carrots">
+          </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Contact information-->
+    <main>  
+      <div class="container" id="main-content">
+        <div class="container" id="headers">
+            <h1>Contact the Crew</h1><br>   
+            <h3>help@roadstand.com</h3>
+            <p>999-555-9999</p>
+        </div> 
+
+        <hr>
+        <!--Contact message form-->
+        <div class="container" id="contact">
+          <p>Leave a message:</p>  
+          <form action="submit" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" class="input-field" placeholder="Name" required>
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" class="input-field" placeholder="Email" required>
+              <br>
+              <label for="message">Message:</label>
+              <textarea name="comment" form="message-form" class="input-field">Enter text here...</textarea>
+              <br>
+              <input class="button" type="submit" value="Submit">
+          </form>
+      </div>
+    </main>
+    <!--Farmer's Market Coalition image-->
+    <footer>
+      <div class="continer-fluid" id="footer-text" =>
+          <p>Roadstand. Copyright 2023.</p>
+      </div>
+    </footer>
+    <!-- Link js files to index.html -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
